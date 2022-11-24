@@ -58,6 +58,12 @@ class Posts extends Component
         
             $this->closeModal();
             $this->resetInputFields();
+            $this->updateMode = false;
+    }
+
+    public function update()
+    {
+        
     }
 
     public function edit($id)
@@ -66,6 +72,7 @@ class Posts extends Component
         $this->post_id = $post->id;
         $this->title = $post->title;
         $this->description = $post->description;
+        $this->updateMode = true;
 
         $this->openModal();
     }

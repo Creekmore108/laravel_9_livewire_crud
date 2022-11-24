@@ -10,6 +10,6 @@
         <input type="text" class="form-control" wire:model="description" id="exampleFormControlInput2" placeholder="Enter Description">
         @error('description') <span class="text-danger">{{ $message }}</span>@enderror
     </div>
-    <button wire:click.prevent="update()" class="btn btn-standard">Update</button>
+    <button wire:click.prevent="store()" class="btn btn-standard">Update</button>
     <button wire:click.prevent="cancel()" class="btn btn-danger">Cancel</button>
 </form>
